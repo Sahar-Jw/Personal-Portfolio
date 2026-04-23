@@ -21,24 +21,24 @@ export default function Timeline() {
         }
     ];
     return (
-<div className={`relative container mx-auto w-[220%] lg:w-full -left-68.25 md:left-0 px-6 flex flex-col space-y-8 lg:mb-3.5 mb-10 ${isDark ? 'dark' : ''}`}>
+<div className={`relative container mx-auto lg:w-full  md:left-0 px-6 flex flex-col space-y-8 lg:mb-3.5 mb-10 ${isDark ? 'dark' : ''}`}>
         {/* Central Line */}
-        <div className="pipe absolute z-0 w-2 h-full bg-gray-200  shadow-md left-1/2 transform -translate-x-1/2"></div>
+        <div className="pipe absolute z-0 w-2 h-full bg-gray-200 md:block hidden  shadow-md left-1/2 transform -translate-x-1/2"></div>
 
         {events.map((event, index) => (
             <div key={index} className={`relative z-10 flex items-center justify-between w-full mb-8 ${
-            index % 2 === 0 ? 'lg:flex-row-reverse flex-row' : ''
+            index % 2 === 0 ? 'md:flex-row-reverse flex-row' : ''
             }`}>
             {/* 1. Empty space for the opposite side */}
-            <div className="order-1 w-5/12"></div>
+            <div className="order-1 md:w-5/12"></div>
 
             {/* 2. Central Circle Marker */}
-            <div className="z-20 flex items-center order-1 bg-main shadow-xl w-8 h-8 rounded-full">
+            <div className="z-20 lg:flex items-center hidden order-1 bg-main shadow-xl w-8 h-8 rounded-full">
                 {/* <h1 className="mx-auto font-semibold text-lg text-white">{index + 1}</h1> */}
             </div>
 
             {/* 3. Content Card */}
-            <div className="content-card order-1 bg-white rounded-lg shadow-xl dark:shadow-2xl w-5/12  px-8 py-6">
+            <div className="content-card border-l-4 border-main md:border-none  order-1 bg-white rounded-lg shadow-xl dark:shadow-2xl lg:w-5/12 w-full  px-8 py-6">
                 <h3 className="font-bold text-gray-800 text-[18px] mb-3">{event.title}</h3>
                 <p className="text-sm leading-snug tracking-wide text-gray-600 whitespace-pre-line">
                 {event.date} — {event.desc}
