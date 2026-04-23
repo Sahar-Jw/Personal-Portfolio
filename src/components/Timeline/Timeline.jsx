@@ -21,13 +21,13 @@ export default function Timeline() {
         }
     ];
     return (
-<div className={`relative container mx-auto px-6 flex flex-col space-y-8 lg:mb-3.5 mb-10 ${isDark ? 'dark' : ''}`}>
+<div className={`relative container mx-auto w-[220%] lg:w-full -left-68.25 md:left-0 px-6 flex flex-col space-y-8 lg:mb-3.5 mb-10 ${isDark ? 'dark' : ''}`}>
         {/* Central Line */}
         <div className="pipe absolute z-0 w-2 h-full bg-gray-200  shadow-md left-1/2 transform -translate-x-1/2"></div>
 
         {events.map((event, index) => (
             <div key={index} className={`relative z-10 flex items-center justify-between w-full mb-8 ${
-            index % 2 === 0 ? 'flex-row-reverse' : ''
+            index % 2 === 0 ? 'lg:flex-row-reverse flex-row' : ''
             }`}>
             {/* 1. Empty space for the opposite side */}
             <div className="order-1 w-5/12"></div>
@@ -38,7 +38,7 @@ export default function Timeline() {
             </div>
 
             {/* 3. Content Card */}
-            <div className="content-card order-1 bg-white rounded-lg shadow-xl dark:shadow-2xl w-5/12 px-8 py-6">
+            <div className="content-card order-1 bg-white rounded-lg shadow-xl dark:shadow-2xl w-5/12  px-8 py-6">
                 <h3 className="font-bold text-gray-800 text-[18px] mb-3">{event.title}</h3>
                 <p className="text-sm leading-snug tracking-wide text-gray-600 whitespace-pre-line">
                 {event.date} — {event.desc}
