@@ -1,0 +1,81 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #0C96E2;
+  --sec-main-color: #583FBC;
+  --primary-text: #1D2130;
+  --sec-text: #282938;
+  --third-text: #344054;
+  --forth-text: #98A2B3;
+  --placeholder: #92929D;
+  --border: #BEC0BF;
+  --hover: #00000080;
+  --white: #FFFFFF;
+  --dark: #1B2431;
+  --bg-primary: #FFFFFF;
+}
+/* dark theme */
+.dark {
+  --primary-text: #FFFFFF;
+  --sec-text: #E0E0E0;
+  --third-text: #D0D0D0;
+  --forth-text: #B0B0B0;
+  --bg-primary: #1B2431;
+}
+
+html.dark, body.dark {
+  background-color: var(--bg-primary) !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.dark .hero-bg-gradient {
+  background: radial-gradient(circle at 35% 50%, #ffffff40 0%, #ffffff20 50%, #ffffff00 100%) !important;
+}
+.dark .cv{
+  background: #0c97e285;
+}
+
+@theme {
+  --color-main: #0C96E2;
+  --color-sec-main: #583FBC;
+  --color-primary-text: var(--primary-text);
+  --color-sec-text: var(--sec-text);
+  --color-third-text: var(--third-text);
+  --color-forth-text: var(--forth-text);
+  --color-placeholder: #92929D;
+  --color-border: #BEC0CF;
+  --color-hover: #00000080;
+  --color-white: #FFFFFF;
+  --color-dark: var(--dark);
+  --font-display: "inter", sans-serif; 
+}
+
+ /* .slider {
+  display: flex;
+}  */
+
+.projectCard {
+  flex: 0 0 calc(33.333% - 16px);
+  box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+  .projectCard {
+    flex: 0 0 calc(50% - 12px);
+  }
+}
+
+@media (max-width: 640px) {
+  .projectCard {
+    flex: 0 0 100%;
+  }
+} 
