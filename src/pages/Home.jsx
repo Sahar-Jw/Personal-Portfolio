@@ -13,7 +13,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { MdOutlineLocationOn, MdOutlineMail } from "react-icons/md";
 import { useTheme } from "../hooks/useTheme.js";
 import { projectData } from "../ProjectData.js";
-import Timeline from "../components/Timeline/Timeline .jsx";
+import Timeline from "../components/Timeline/Timeline.jsx";
 
 export default function Home() {
     const [isVisible, setIsVisible] = useState(false);
@@ -94,8 +94,14 @@ export default function Home() {
                             titleStyle={'lg:text-[38px] text-[24px] font-bold text-primary-text mb-[3px]'}
                             subTitleStyle={'lg:text-[17px] text-[14px] font-normal text-primary-text'}
                         />
-                        <p className="lg:text-lg/10 text-sm/6 font-medium">
-                            Front-End Developer specializing in React.js with hands-on experience building scalable and responsive web applications, including e-commerce platforms and admin dashboards. Skilled in developing dynamic user interfaces, integrating RESTful APIs, and implementing authentication and full CRUD functionality.Strong focus on responsive design, performance optimization, and delivering seamless user experiences. Experienced in working with modern frontend technologies and collaborating in team environments on real-world projects.Passionate about writing clean, maintainable code and continuously improving technical skills.
+                        <p className="lg:text-lg/10 text-sm/6 font-medium mb-4 text-primary-text">
+                            Front-End Developer specializing in React.js with hands-on experience building scalable and responsive web applications, including e-commerce platforms and admin dashboards. Skilled in developing dynamic user interfaces, integrating RESTful APIs, and implementing authentication and full CRUD functionality.
+                        </p>
+                        <p className="lg:text-lg/10 text-sm/6 font-medium mb-4 text-primary-text">
+                            Strong focus on responsive design, performance optimization, and delivering seamless user experiences. Experienced in working with modern frontend technologies and collaborating in team environments on real-world projects.
+                        </p>
+                        <p className="lg:text-lg/10 text-sm/6 font-medium text-primary-text">
+                            Passionate about writing clean, maintainable code and continuously improving technical skills.
                         </p>
                         {/* <SkillBars /> */}
                     </div>
