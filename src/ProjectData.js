@@ -10,7 +10,6 @@ export const projectData = [
 
     { id: 4,date:'2024-30-9', title: 'dashboard', subTitle: 'Admin Dashboard', src: '/assets/img/dashboard.png',desc:'A responsive Admin Dashboard application for managing products. It provides user authentication and full CRUD operations for products via an external API',lang:'Html5 , Css , Javascript', lib:'React.js react-router-dom react-icons',demo:'https://admin-dashoard.sandysmith4490.workers.dev/',repo:'https://github.com/Sahar-Jw/Dashoard' },
 
-
     { id: 5,date:'2025-4-9', title: 'String Master', subTitle: 'Educational Platform', src: '/assets/img/string.png',desc:" StringMaster is a modern, responsive landing page for an online guitar learning platform. It showcases interactive lessons that help users master guitar skills from beginner chords to advanced techniques. Learn at your own pace with visual fretboard trainers, build with Html Css and Bootstrap and its fully Responcive ",lang:'Html5 , Css ',lib:'Bootstrap',demo:'https://sahar-jw.github.io/StringMaster/',repo:'https://github.com/Sahar-Jw/StringMaster' },
 
 
