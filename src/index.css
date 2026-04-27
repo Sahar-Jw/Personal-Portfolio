@@ -44,7 +44,10 @@ html {
 }
 
 .dark .cv{
-  background: #0e3186;
+  background: #6693ff;
+  &:hover{
+    background: #6693ff80;
+  }
 }
 .dark .content-card{
   background-color: #1e2939 ;
@@ -60,7 +63,7 @@ html {
 }
 
 @theme {
-  --color-main: #0e3186;
+  --color-main: #6693ff;
   --color-sec-main: #583FBC;
   --color-primary-text: var(--primary-text);
   --color-sec-text: var(--sec-text);

@@ -26,8 +26,8 @@ export default function ProjectCard({projectCards,style,divStyle}) {
                             titleStyle={'text-primary-text font-semibold lg:text-[22px] text-[18px]'}
                             subTitleStyle={'text-primary-text font-normal lg:text-[14px] text-[13px]'}
                         />
-                        <a href={pCard.demo || "http://project-demo"}>
-                            <LuCircleArrowOutUpRight className="text-main lg:text-[30px] text-[20px] cursor-pointer"/>
+                        <a href={pCard.demo} className="bg-main py-2 px-6 rounded-lg shadow-lg text-primary-text font-semibold lg:text-[16px] text-[14px] cursor-pointer">
+                            Demo
                         </a>
                     </div>
                 </div>
