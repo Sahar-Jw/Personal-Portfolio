@@ -9,34 +9,32 @@ export default function Nav({name,links,icon,onToggle}) {
     const [activeLink, setActiveLink] = useState('Home');
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-    
-    // useEffect(() => {
-    //     const sections = links.map(link => document.querySelector(link.path)).filter(Boolean);
-    //     const observer = new IntersectionObserver(
-    //         (entries) => {
-    //             let active = 'Home';
-    //             let maxIntersect = 0;
-    //             entries.forEach(entry => {
-    //                 if (entry.isIntersecting && entry.intersectionRatio > maxIntersect) {
-    //                     maxIntersect = entry.intersectionRatio;
-    //                     const id = entry.target.getAttribute('id');
-    //                     const matchingLink = links.find(l => l.path === '#' + id);
-    //                     if (matchingLink) active = matchingLink.name;
-    //                 }
-    //             });
-    //             if (window.scrollY < 100) {
-    //                 setActiveLink('Home');
-    //                 return;
-    //             }
-    //             setActiveLink(active);
-    //         },
-    //         { threshold: 0.3, rootMargin: '-15% 0px -50% 0px' }
-    //     );
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY + 80;
 
-    //     sections.forEach(section => observer.observe(section));
+            if (window.scrollY < 50) {
+                setActiveLink('Home');
+                return;
+            }
 
-    //     return () => observer.disconnect();
-    // }, [links]);
+            const sections = links
+                .map(link => ({ link, element: document.querySelector(link.path) }))
+                .filter(item => item.element);
+
+            for (let i = sections.length - 1; i >= 0; i--) {
+                const { link, element } = sections[i];
+                if (element.offsetTop <= scrollPosition) {
+                    setActiveLink(link.name);
+                    return;
+                }
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        handleScroll();
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, [links]);
 
     const handleLinkClick = (e, linkName, linkPath) => {
         e.preventDefault();
