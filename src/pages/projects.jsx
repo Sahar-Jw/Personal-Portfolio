@@ -84,7 +84,7 @@ const containerRef = useRef(null);
                     </div>
                 </div>
                 <div className="flex flex-col lg:w-[50%]">
-                <div className="lg:mb-5 mb-3.5 flex justify-between">
+                <div className="lg:mb-5 mb-3.5 flex justify-between items-center">
                     <div className="">
                         <h1 className="text-primary-text font-semibold lg:text-[28px] text-[18px]">
                             {project.title}
@@ -93,8 +93,8 @@ const containerRef = useRef(null);
                             {project.date}
                         </p>
                     </div>
-                    <a href={project.demo}>
-                        <LuCircleArrowOutUpRight className="text-main lg:text-[30px] text-[24px]"/>
+                    <a href={project.demo} className="bg-main py-2 px-6 rounded-lg shadow-lg text-white font-semibold lg:text-[16px] text-[14px] cursor-pointer transition-all duration-300 ">
+                        Demo
                     </a>
                 </div>
                 <p className="text-primary-text lg:text-[18px] text-[14px] lg:mb-4.5 mb-3">{project.desc}</p>
@@ -121,7 +121,7 @@ const containerRef = useRef(null);
                 </p>
                 )}
                 <div className=" flex gap-3">
-                    <a href={project.repo} className="w-fit lg:px-5.5 lg:py-3.25 px-3 py-2 text-[14px] lg:text-[16px] text-white font-medium bg-main rounded-lg hover:bg-[#0c96e2c2] transition-all">
+                    <a href={project.repo} className="w-fit lg:px-5.5 lg:py-3.25 px-3 py-2 text-[14px] lg:text-[16px] text-white font-medium bg-main rounded-lg transition-all">
                         Github Repo
                     </a>
                     <button 
@@ -149,14 +149,14 @@ const containerRef = useRef(null);
                     <button 
                         onClick={prev}
                         disabled={currentIndex === 0}
-                    className={`text-white lg:text-[24px] text-[18px] rounded-[50%] lg:p-3 p-1.5 cursor-pointer border-2 border-main transition-all ${currentIndex === 0 ? 'bg-transparent  text-[#A6A6A6]! cursor-not-allowed!' : 'bg-main hover:bg-[#0c96e2c2]'}`}
+                    className={`text-white lg:text-[24px] text-[18px] rounded-[50%] lg:p-3 p-1.5 cursor-pointer border-2 border-main transition-all ${currentIndex === 0 ? 'bg-transparent  text-[#A6A6A6]! cursor-not-allowed!' : 'bg-main'}`}
                     >
                         <MdKeyboardArrowLeft />
                     </button>
                     <button 
                         onClick={next}
                         disabled={currentIndex >= projectData.length - cardsToShow}
-                        className={`text-white lg:text-[24px] text-[18px] rounded-[50%] lg:p-3 p-1.5 cursor-pointer border-2 border-main transition-all ${currentIndex >= projectData.length - cardsToShow ? 'bg-transparent text-[#A6A6A6]! cursor-not-allowed!' : 'bg-main hover:bg-[#0c96e2c2]'}`}
+                        className={`text-white lg:text-[24px] text-[18px] rounded-[50%] lg:p-3 p-1.5 cursor-pointer border-2 border-main transition-all ${currentIndex >= projectData.length - cardsToShow ? 'bg-transparent text-[#A6A6A6]! cursor-not-allowed!' : 'bg-main'}`}
                         >
                         <MdOutlineKeyboardArrowRight />
                     </button>

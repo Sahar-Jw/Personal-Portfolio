@@ -12,10 +12,10 @@ export default function Footer() {
                 Developed by <span className='font-semibold text-main'>Sahar Jwar</span>
             </p>
             <div className=" flex lg:gap-4 gap-1 items-center">
-                <a href="https://www.linkedin.com/in/sahar-jwar-8000a52a2/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BEtiGmt%2B%2FSuy48JMUiKstMg%3D%3D" className='text-white lg:p-1.75 p-1.25 bg-main rounded-[50%] cursor-pointer hover:bg-[#0c96e2c2]'>
+                <a href="https://www.linkedin.com/in/sahar-jwar-8000a52a2/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BEtiGmt%2B%2FSuy48JMUiKstMg%3D%3D" className='text-white lg:p-1.75 p-1.25 bg-main rounded-[50%] cursor-pointer'>
                     <FaLinkedinIn />
                 </a>
-                <a href="https://github.com/Sahar-Jw" className='text-white lg:p-1.75 p-1.25 bg-main rounded-[50%] cursor-pointer hover:bg-[#0c96e2c2]'>
+                <a href="https://github.com/Sahar-Jw" className='text-white lg:p-1.75 p-1.25 bg-main rounded-[50%] cursor-pointer'>
                     <FaGithub />
                 </a>
             </div>

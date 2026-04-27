@@ -19,14 +19,14 @@ export default function ProjectCard({projectCards,style,divStyle}) {
                             </div>
                         </div>
                     </NavLink>
-                    <div className="flex justify-between items-end p-4">
+                    <div className="flex justify-between items-start p-4">
                         <Title
                             title={pCard.title}
                             subTitle={pCard.subTitle}
                             titleStyle={'text-primary-text font-semibold lg:text-[22px] text-[18px]'}
                             subTitleStyle={'text-primary-text font-normal lg:text-[14px] text-[13px]'}
                         />
-                        <a href={pCard.demo} className="bg-main py-2 px-6 rounded-lg shadow-lg text-primary-text font-semibold lg:text-[16px] text-[14px] cursor-pointer">
+                        <a href={pCard.demo} className="bg-main py-2 px-6 rounded-lg shadow-lg text-white font-semibold lg:text-[16px] text-[14px] cursor-pointer transition-all duration-300 ">
                             Demo
                         </a>
                     </div>

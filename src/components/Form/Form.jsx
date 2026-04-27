@@ -51,7 +51,7 @@ export default function Form() {
                 onChange={(e) => setFormData({...formData, message: e.target.value })}
                 className=" w-full lg:px-5 lg:py-4 lg:text-[16px] px-4 py-3 text-[14px] font-normal placeholder:font-inter border-[0.3px] border-border rounded-lg text-primary-text placeholder:text-placeholder placeholder:text-[14px] lg:placeholder:text-[16px] focus:outline-none focus:border-main resize-none" 
             />
-            <button type="submit" className="cursor-pointer px-8 py-3 lg:px-12.5 lg:py-4 bg-main text-white font-medium rounded-lg hover:bg-[#0c96e2c2] transition-colors lg:text-[16px] text-[14px]">Send Message</button>
+            <button type="submit" className="cursor-pointer px-8 py-3 lg:px-12.5 lg:py-4 bg-main text-white font-medium rounded-lg transition-colors lg:text-[16px] text-[14px]">Send Message</button>
         </form>
     )
 }

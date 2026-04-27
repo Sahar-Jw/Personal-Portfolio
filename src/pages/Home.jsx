@@ -133,7 +133,7 @@ export default function Home() {
                         subTitle={"If you're not happy with the design after the first draft,I'll refund your deposit, no questions asked"}
                         subTitleStyle={'lg:text-[20px] text-[14px] lg:font-bold text-white'}
                         />
-                            <a href="#contact" className="lg:px-7.5 lg:py-3.5 p-3.5 text-white font-semibold text-[14px] flex gap-1 hover:bg-[#0c96e2c2] bg-main rounded-md items-center ">
+                            <a href="#contact" className="lg:px-7.5 lg:py-3.5 p-3.5 text-white font-semibold text-[14px] flex gap-1 bg-main rounded-md items-center ">
                                 Contact
                                 <HiOutlineArrowRight/>
                             </a>
@@ -149,7 +149,7 @@ export default function Home() {
                             span={'Projects'}
                             spanStyle={'text-main ml-[10px]'}
                             divStyle={'w-[40%]'}/>
-                            <a href="https://github.com/Sahar-Jw" className="lg:px-7.5 lg:py-3.25 p-4 text-white font-medium text-[14px] flex gap-1 hover:bg-[#0c96e2c2] bg-main rounded-md items-center ">
+                            <a href="https://github.com/Sahar-Jw" className="lg:px-7.5 lg:py-3.25 p-4 text-white font-medium text-[14px] flex gap-1 bg-main rounded-md items-center ">
                                 View Github 
                                 <RiArrowRightUpLine />
                             </a>
@@ -190,7 +190,7 @@ export default function Home() {
                         </div>
                     
                 </Section>
-                <button onClick={scrollToTop} className={`absolute right-6.5 bottom-4.75 w-12.5  h-12.5 rounded-xl text-white bg-main hover:bg-[#0c96e2c2] cursor-pointer p-4 shadow-[0_6px_28px_1px_var(--tw-shadow-color,#a5a8b1)]
+                <button onClick={scrollToTop} className={`absolute right-6.5 bottom-4.75 w-12.5  h-12.5 rounded-xl text-white bg-main cursor-pointer p-4 shadow-[0_6px_11px_-1px_var(--tw-shadow-color,#a5a8b1)]
                             transition-all duration-500 ease-out transform${isVisible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-10 scale-75 pointer-events-none'}`} >
                         <FaArrowUp />
                 </button>
